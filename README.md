@@ -32,15 +32,23 @@ The goal of this backend system is to provide a solid foundation for core Airbnb
 
 ## ⚙️ Technology Stack
 
-| Layer                  | Technology                    |
-| ---------------------- | ----------------------------- |
-| **Backend**            | Django, Django REST Framework |
-| **Database**           | PostgreSQL                    |
-| **Query Layer**        | GraphQL                       |
-| **Asynchronous Tasks** | Celery                        |
-| **Caching**            | Redis                         |
-| **Containerization**   | Docker                        |
-| **CI/CD**              | GitHub Actions / GitLab CI    |
+The following technologies were chosen to ensure a scalable, maintainable, and efficient backend system:
+
+- **Django**: A high-level Python web framework used to build the core of the backend application, including API endpoints, business logic, and admin interfaces.
+
+- **Django REST Framework (DRF)**: An extension of Django that simplifies the creation of RESTful APIs, enabling CRUD operations for users, properties, bookings, and more.
+
+- **PostgreSQL**: A powerful and reliable relational database system used to store structured data such as user profiles, property listings, bookings, reviews, and payments.
+
+- **GraphQL**: A query language and runtime for APIs that provides clients with the flexibility to request exactly the data they need, reducing over-fetching and improving performance.
+
+- **Celery**: An asynchronous task queue used to handle background jobs such as sending email notifications, processing payments, and scheduling tasks.
+
+- **Redis**: An in-memory data structure store used for caching frequently accessed data and managing Celery task queues for performance optimization.
+
+- **Docker**: A containerization platform that packages the application and its dependencies into isolated containers, ensuring consistency across development, testing, and production environments.
+
+- **CI/CD Pipelines**: Continuous Integration and Continuous Deployment tools (e.g., GitHub Actions or GitLab CI) that automate testing, linting, and deployment workflows to improve development efficiency and code quality.
 
 ---
 
