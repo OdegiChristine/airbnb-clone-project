@@ -52,6 +52,111 @@ The following technologies were chosen to ensure a scalable, maintainable, and e
 
 ---
 
+## 📊 Database Design
+
+The backend database is designed to support the core functionalities of the Airbnb Clone platform, including user management, property listings, bookings, payments, and reviews. Below are the key entities and their relationships:
+
+### 🧑 Users
+
+Represents all users on the platform, including guests and hosts.
+
+**Key Fields:**
+
+- `id`: Unique identifier for each user
+- `username`: User's login name
+- `email`: User's contact email
+- `password_hash`: Encrypted password
+- `is_host`: Boolean flag indicating if the user can list properties
+
+**Relationships:**
+
+- A user can create **multiple properties**
+- A user can make **multiple bookings**
+- A user can write **multiple reviews**
+
+---
+
+### 🏠 Properties
+
+Represents a property listed by a host.
+
+**Key Fields:**
+
+- `id`: Unique identifier for each property
+- `title`: Title of the listing
+- `description`: Detailed description of the property
+- `location`: Physical address or coordinates
+- `price_per_night`: Cost of booking per night
+
+**Relationships:**
+
+- A property **belongs to one user** (host)
+- A property can have **multiple bookings**
+- A property can receive **multiple reviews**
+
+---
+
+### 📅 Bookings
+
+Represents a reservation made by a user for a property.
+
+**Key Fields:**
+
+- `id`: Unique identifier for each booking
+- `user_id`: ID of the guest who made the booking
+- `property_id`: ID of the property being booked
+- `start_date`: Check-in date
+- `end_date`: Check-out date
+
+**Relationships:**
+
+- A booking **belongs to one user**
+- A booking **belongs to one property**
+- A booking can have **one payment**
+
+---
+
+### 💳 Payments
+
+Represents a payment transaction for a booking.
+
+**Key Fields:**
+
+- `id`: Unique identifier for each payment
+- `booking_id`: ID of the associated booking
+- `amount`: Total amount paid
+- `status`: Payment status (e.g., pending, completed)
+- `timestamp`: Date and time of the transaction
+
+**Relationships:**
+
+- A payment **belongs to one booking**
+
+---
+
+### 📝 Reviews
+
+Represents feedback left by users for properties.
+
+**Key Fields:**
+
+- `id`: Unique identifier for each review
+- `user_id`: ID of the reviewer
+- `property_id`: ID of the property being reviewed
+- `rating`: Numerical score (e.g., 1 to 5)
+- `comment`: Written feedback
+
+**Relationships:**
+
+- A review **belongs to one user**
+- A review **belongs to one property**
+
+---
+
+> This relational model ensures data integrity, supports essential business logic, and enables efficient querying and data access patterns.
+
+---
+
 ## 👥 Team Roles
 
 To ensure a successful and efficient development process, the Airbnb Clone Project is structured around clearly defined roles. Each team member contributes their expertise to different aspects of the system.
