@@ -30,50 +30,56 @@ The goal of this backend system is to provide a solid foundation for core Airbnb
 
 ---
 
-## 🛠️ Features Overview
-
-### 1. API Documentation
-- **OpenAPI**: For interactive and standardized API documentation.
-- **Django REST Framework**: RESTful endpoints for core models.
-- **GraphQL**: Flexible querying layer for frontend integrations.
-
-### 2. User Authentication
-- **Endpoints**: `/users/`, `/users/{user_id}/`
-- **Features**: Signup, login, profile editing, authentication
-
-### 3. Property Management
-- **Endpoints**: `/properties/`, `/properties/{property_id}/`
-- **Features**: Create, update, retrieve, and delete property data
-
-### 4. Booking System
-- **Endpoints**: `/bookings/`, `/bookings/{booking_id}/`
-- **Features**: Book properties, manage check-in/check-out
-
-### 5. Payment Processing
-- **Endpoints**: `/payments/`
-- **Features**: Process and log payment transactions
-
-### 6. Review System
-- **Endpoints**: `/reviews/`, `/reviews/{review_id}/`
-- **Features**: Post and manage reviews and ratings
-
-### 7. Database Optimizations
-- **Indexing**: For faster data retrieval
-- **Caching**: Reduce load with Redis-based strategies
-
----
-
 ## ⚙️ Technology Stack
 
-| Layer                 | Technology                    |
-|----------------------|-------------------------------|
-| **Backend**          | Django, Django REST Framework |
-| **Database**         | PostgreSQL                    |
-| **Query Layer**      | GraphQL                       |
-| **Asynchronous Tasks** | Celery                      |
-| **Caching**          | Redis                         |
-| **Containerization** | Docker                        |
-| **CI/CD**            | GitHub Actions / GitLab CI    |
+| Layer                  | Technology                    |
+| ---------------------- | ----------------------------- |
+| **Backend**            | Django, Django REST Framework |
+| **Database**           | PostgreSQL                    |
+| **Query Layer**        | GraphQL                       |
+| **Asynchronous Tasks** | Celery                        |
+| **Caching**            | Redis                         |
+| **Containerization**   | Docker                        |
+| **CI/CD**              | GitHub Actions / GitLab CI    |
 
 ---
 
+## 👥 Team Roles
+
+To ensure a successful and efficient development process, the Airbnb Clone Project is structured around clearly defined roles. Each team member contributes their expertise to different aspects of the system.
+
+### 🧠 Project Manager (PM)
+
+**Responsibility**: Oversees project timelines, task delegation, and coordination between teams. Ensures the project aligns with goals and deadlines, and communicates progress to stakeholders.
+
+### 🧱 Backend Developer
+
+**Responsibility**: Designs and implements the core server-side logic using Django and Django REST Framework. Handles API development, authentication, property management, and booking logic.
+
+### 🛢️ Database Administrator (DBA)
+
+**Responsibility**: Designs and maintains the PostgreSQL database schema. Optimizes queries, manages migrations, enforces data integrity, and implements indexing and performance strategies.
+
+### ⚙️ DevOps Engineer
+
+**Responsibility**: Sets up Docker environments and manages CI/CD pipelines. Ensures smooth deployments, version control workflows, and oversees containerization and scalability setups.
+
+### 🔁 API Integration Specialist
+
+**Responsibility**: Focuses on the integration of third-party services such as payment gateways and notification systems. Ensures seamless communication between internal and external APIs.
+
+### 📦 QA Engineer / Tester
+
+**Responsibility**: Writes test cases, performs manual and automated testing on API endpoints and application workflows. Ensures that bugs are caught early and that features meet requirements.
+
+### 🔐 Security Specialist
+
+**Responsibility**: Implements authentication, authorization, and data protection mechanisms. Performs vulnerability assessments and ensures the backend complies with security best practices.
+
+### 📄 Documentation Lead
+
+**Responsibility**: Maintains API documentation (OpenAPI), README files, developer guides, and onboarding instructions. Ensures that internal and external documentation is always up-to-date and accurate.
+
+---
+
+> Clear role definitions ensure effective collaboration, streamlined development, and high-quality output across all stages of the project.
