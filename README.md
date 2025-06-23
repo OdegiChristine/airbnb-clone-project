@@ -157,6 +157,40 @@ Represents feedback left by users for properties.
 
 ---
 
+## 🧩 Feature Breakdown
+
+This section outlines the main features of the Airbnb Clone backend and how each contributes to building a fully functional and scalable booking platform.
+
+### 1. 📝 API Documentation
+
+The backend APIs are documented using the OpenAPI standard, ensuring developers can easily understand and integrate with the system. With Django REST Framework and GraphQL, the platform supports both RESTful and flexible data querying, making it adaptable for various frontend needs.
+
+### 2. 🔐 User Authentication
+
+Users can register, log in, and manage their profiles through secure authentication endpoints. This feature ensures that both guests and hosts can interact with the system while protecting user data and enforcing role-based access control.
+
+### 3. 🏠 Property Management
+
+Hosts can create, update, retrieve, and delete property listings. This feature enables the core functionality of showcasing available accommodations and managing listing content dynamically.
+
+### 4. 📆 Booking System
+
+Users can make and manage reservations for listed properties. The system handles booking logic, including date selection and validation, ensuring that users can plan their stays and hosts can manage availability effectively.
+
+### 5. 💳 Payment Processing
+
+The payment system facilitates secure transactions for bookings and records financial details for accountability. This ensures trust between guests and hosts and supports a sustainable platform economy.
+
+### 6. 📝 Review System
+
+Guests can leave ratings and comments after their stays, helping build credibility and transparency on the platform. Reviews also provide valuable feedback to hosts and improve decision-making for future guests.
+
+### 7. ⚡ Database Optimizations
+
+To maintain high performance, the system uses indexing and caching techniques. These strategies ensure efficient data retrieval and reduce server load, especially as the application scales with more users and data.
+
+---
+
 ## 👥 Team Roles
 
 To ensure a successful and efficient development process, the Airbnb Clone Project is structured around clearly defined roles. Each team member contributes their expertise to different aspects of the system.
