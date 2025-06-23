@@ -191,6 +191,62 @@ To maintain high performance, the system uses indexing and caching techniques. T
 
 ---
 
+## 🔐 API Security
+
+Security is a critical aspect of the Airbnb Clone backend, especially given the sensitive nature of user data, financial transactions, and personal property listings. The following measures are implemented to ensure a secure and trustworthy platform:
+
+### 🔑 Authentication
+
+All endpoints that require user interaction are protected using token-based authentication (e.g., JWT). This ensures that only verified users can access protected resources like bookings, payments, or profile updates.
+
+> **Why it matters**: Prevents unauthorized access to user accounts and ensures identity verification for each session.
+
+---
+
+### 🛂 Authorization
+
+Role-based access control (RBAC) is implemented to restrict actions based on user roles (e.g., guest, host, admin). For example, only hosts can manage properties, and only users who made a booking can leave a review.
+
+> **Why it matters**: Ensures users can only perform actions they are permitted to, protecting data integrity and business rules.
+
+---
+
+### 📉 Rate Limiting
+
+Rate limiting is enforced to control the number of requests a user can make in a given time frame. This helps defend against brute-force attacks, abuse, and denial-of-service (DoS) scenarios.
+
+> **Why it matters**: Protects the API from overload and malicious traffic, ensuring availability for all users.
+
+---
+
+### 🧪 Input Validation & Sanitization
+
+All incoming data is validated and sanitized to prevent common vulnerabilities like SQL injection, XSS (Cross-Site Scripting), and CSRF (Cross-Site Request Forgery).
+
+> **Why it matters**: Ensures that malicious inputs don’t compromise the application or underlying systems.
+
+---
+
+### 🔒 Secure Payment Handling
+
+Payments are processed through a trusted third-party payment gateway with proper encryption and secure protocols. Sensitive data such as card details are never stored on the server.
+
+> **Why it matters**: Protects financial data, builds user trust, and ensures PCI-DSS compliance for transaction security.
+
+---
+
+### 🧩 HTTPS Enforcement
+
+All API traffic is encrypted using HTTPS to protect data in transit.
+
+> **Why it matters**: Prevents eavesdropping and man-in-the-middle attacks, especially on public or insecure networks.
+
+---
+
+> These security practices ensure that user data, platform integrity, and financial transactions remain protected at all times, laying the foundation for a trustworthy and scalable application.
+
+---
+
 ## 👥 Team Roles
 
 To ensure a successful and efficient development process, the Airbnb Clone Project is structured around clearly defined roles. Each team member contributes their expertise to different aspects of the system.
